@@ -119,9 +119,8 @@ export default function Home() {
         </Column>
       </Column>
 
-      {/* ✅ 只保留第二个项目卡片 */}
       <RevealFx translateY="16" delay={0.6}>
-        <Projects range={[2, 2]} />
+        <Projects range={[1, 1]} />
       </RevealFx>
     </Column>
   );

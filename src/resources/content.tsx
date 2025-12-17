@@ -40,11 +40,7 @@ const social: Social = [
     icon: "linkedin",
     link: "https://www.linkedin.com/company/once-ui/",
   },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-  },
+
   {
     name: "Email",
     icon: "email",
@@ -58,7 +54,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Making the user interface efficient and accessible</>,
+  headline: <>Hi, My name is Evelyn Li.</>,
   featured: {
     display: false,
     title: (
@@ -74,8 +70,8 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Evelyn, a designer studying in New York University , where I craft
-      intuitive user experiences. After hours, I build my own projects.
+      I am a designer studying in New York University , where I craft intuitive
+      user experiences. After hours, I build my own projects.
     </>
   ),
 };
@@ -108,45 +104,85 @@ const about: About = {
     ),
   },
   work: {
-    display: false, // set to false to hide this section
+    display: true, // set to false to hide this section
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "iDen Group Holding Inc.",
+        timeframe: "02/2025-05/2025",
+        role: "Intern of Social Media Content Creator",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20%
-            increase in user engagement and 30% faster load times.
+            Analyzed social media traffic data to identify audience engagement
+            trends and optimize content strategy across platforms such as
+            Rednote and Instagram.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows,
-            enabling designers to iterate 50% faster.
+            Edited and produced short-form videos tailored to platform-specific
+            algorithms and user preferences, increasing visibility and
+            interaction.
           </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          <>
+            Designed holiday-themed promotional campaigns and visual content to
+            enhance seasonal brand presence and boost audience participation.
+          </>,
+          <>
+            Contributed to the planning and execution of social media marketing
+            initiatives, aligning content with brand tone and marketing goals to
+            support broader digital growth strategies.
+          </>,
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Tencent Limited",
+        timeframe: "07/2024-09/2024",
+        role: "Intern of Search Experience Design",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple
-            platforms, improving design consistency by 40%.
+            Redesigned the search suggestion interface and optimized the UI of
+            the search results and user feedback pages to enhance usability and
+            visual appeal.
           </>,
           <>
-            Led a cross-functional team to launch a new product line,
-            contributing to a 15% increase in overall company revenue.
+            Updated design elements, including primary cards and fonts on the
+            search results and leaderboard pages, to improve overall user
+            interaction and experience
+          </>,
+          <>
+            Enhanced over 200 vintage movie posters by upgrading image quality,
+            modifying layouts, removing logos, and in some cases, completely
+            redesigning to elevate visual impact.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Meituan Limited",
+        timeframe: "07/2023-08/2023",
+        role: "Intern of Government Affairs",
+        achievements: [
+          <>
+            Planned strategically for local growth by developing partnerships
+            and gaining insights into local government policies on public
+            transportation, urban management, and environmental protection,
+            summarizing the insights into the report.
+          </>,
+          <>
+            Established a favorable political and commercial environment for
+            Meituan’s electric motorcycles, ensuring alignment with strategic
+            objectives and local regulations.
+          </>,
+          <>
+            Built relationships with regulatory bodies, implemented strategies
+            for the company’s governmental relations at the local level to
+            secure permissions and foster a favorable developmental environment
+            for transportation services.
+          </>,
+          <>
+            Monitored industry trends and corporate movements within the
+            transportation sector, promoted collaborations with local
+            enterprises, and ensured the local operation met regulatory
+            requirements and business needs effectively.
           </>,
         ],
         images: [],
@@ -168,14 +204,18 @@ const about: About = {
     ],
   },
   technical: {
-    display: false, // set to false to hide this section
+    display: true, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {
+        title:
+          "Related Skills: Figma, Photoshop, After Effects, Premiere Pro, Illustrator, InDesign, Reaper, Motion Builder, HTML, CSS, Next.js, Microsoft Suite",
+        tags: [],
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
         title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
         tags: [
           {
             name: "Figma",
@@ -183,26 +223,21 @@ const about: About = {
           },
         ],
         // optional: leave the array empty if you don't want to display images
-        images: [
+        images: [],
+      },
+      {
+        title: "Photoshop",
+        tags: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Adobe Photoshop",
+            icon: "PS",
           },
         ],
+        // optional: leave the array empty if you don't want to display images
+        images: [],
       },
       {
         title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
         tags: [
           {
             name: "JavaScript",
@@ -212,20 +247,39 @@ const about: About = {
             name: "Next.js",
             icon: "nextjs",
           },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
         ],
         // optional: leave the array empty if you don't want to display images
-        images: [
+        images: [],
+      },
+      {
+        title: "Illustrator",
+        tags: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Adobe Illustrator",
+            icon: "AI",
           },
         ],
+        images: [],
+      },
+      {
+        title: "After Effects",
+        tags: [
+          {
+            name: "Adobe After Effects",
+            icon: "AE",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "Premiere Pro",
+        tags: [
+          {
+            name: "Adobe Premiere Pro",
+            icon: "PR",
+          },
+        ],
+        images: [],
       },
     ],
   },
